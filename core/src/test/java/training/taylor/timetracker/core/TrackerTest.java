@@ -1,4 +1,4 @@
-package training.taylor.timetracker.core;
+ package training.taylor.timetracker.core;
 
 import static org.junit.Assert.*;
 
@@ -30,6 +30,6 @@ public class TrackerTest {
         entry.setRate(80.0f);
         entry.setTime(3);
         tracker.add(entry);
-        assertTrue(tracker.size() > 0);
+        assertTrue(tracker.size() < 0);
     }
 }
